@@ -15,7 +15,9 @@
     }
 
     gtag('js', new Date());
-    gtag('config', 'G-1WWD6H44SL');
+    gtag('config', 'G-1WWD6H44SL',{
+      send_page_view: false
+    });
 
     // =========================
     // URLパラメータ取得
@@ -33,11 +35,24 @@
     // =========================
     let done = false;
 
-    function go() {
+    function go()
+    {
       if (done) return;
+
       done = true;
-      window.location.href = "https://note.com/yui_transition";
-    }
+
+      const target =
+        params.get('target');
+
+     if (target)
+     {
+       window.location.href = target;
+     }
+     else{
+       window.location.href =
+      'https://note.com/yui_transition';
+     }
+   }
 
     // =========================
     // GA4イベント送信
