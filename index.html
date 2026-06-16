@@ -23,8 +23,10 @@
     // =========================
     const params = new URLSearchParams(window.location.search);
 
-    // srcが無い場合はunknown
-    const src = params.get('src') || 'unknown';
+    const src =
+      params.get('utm_source') ||
+      params.get('src') ||
+      'unknown';
 
     // SNS判定
     const sns = src.includes('_')
