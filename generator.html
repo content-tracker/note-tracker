@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<h2>note計測URL生成ツール🐇🫧</h2>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>note計測URL生成ツール🐇🫧</title>
+
+</head>
+
+<body>
+
+  <h2>note計測URL生成ツール</h2>
+
+  <hr>
+
+  <!-- SNS選択 -->
+  <label>SNS</label>
+  <br>
+
+  <select id="source">
+
+    <option value="threads">
+      Threads
+    </option>
+
+    <option value="x">
+      X
+    </option>
+
+    <option value="instagram">
+      Instagram
+    </option>
+
+    <option value="tiktok">
+      TikTok
+    </option>
+
+    <option value="lemon8">
+      Lemon8
+    </option>
+
+  </select>
+
+  <br><br>
+
+  <label>記事番号（例：profile、01）</label>
+  <br>
+
+  <input
+    type="text"
+    id="articleNo"
+    placeholder="01">
+
+  <br><br>
+
+  <label>note URL</label>
+  <br>
+
+  <input
+    type="text"
+    id="noteUrl"
+    style="width:100%;"
+    placeholder="https://note.com/yui_transition/n/xxxxx">
+
+  <br><br>
+
+  <button onclick="createTrackingUrl()">
+    計測URL生成
+  </button>
+
+  <br><br>
+
+  <textarea
+    id="result"
+    rows="6"
+    style="width:100%;"
+    readonly>
+  </textarea>
+
+  <br><br>
+
+  <button onclick="copyUrl()">
+    コピー
+  </button>
+
+  <script>
+
+    // =========================
+    // 計測URL生成
+    // =========================
+    function createTrackingUrl()
+    {
+      const source =
+        document.getElementById('source').value;
+
+      const articleNo =
+        document.getElementById('articleNo').value.trim();
+
+      const noteUrl =
+        document.getElementById('noteUrl').value.trim();
+
+      if (!articleNo || !noteUrl)
+      {
+        alert('入力して！🫧');
+
+        return;
+      }
+
+      const encodedUrl =
+        encodeURIComponent(noteUrl);
+
+      let campaign;
+
+      if (articleNo.toLowerCase() === 'profile')
+      {
+        campaign = 'profile';
+      }
+      else
+      {
+        const articleNoFormatted =
+          articleNo.padStart(2, '0');
+
+  campaign =
+    'note' + articleNoFormatted;
+      }
+
+      const trackingUrl =
+        'https://content-tracker.github.io/note-tracker/' +
+        '?target=' + encodedUrl +
+        '&utm_source=' + source +
+        '&utm_medium=social' +
+        '&utm_campaign=' + campaign;
+
+      document.getElementById('result').value =
+        trackingUrl;
+    }
+
+    // =========================
+    // コピー
+    // =========================
+    async function copyUrl()
+    {
+      const result =
+        document.getElementById('result').value;
+
+      if (!result)
+      {
+        alert('⚠️先にURLを生成して！');
+
+        return;
+      }
+
+      await navigator.clipboard.writeText(result);
+
+      alert('コピー完了🫶🏻');
+    }
+
+  </script>
+
+</body>
+
+</html>
+
