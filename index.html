@@ -1,8 +1,7 @@
 <html>
 <head>
   <title>redirecting...</title>
-
-  <!-- GA4読み込み -->
+  
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WWD6H44SL"></script>
 
   <script>
@@ -11,7 +10,7 @@
     // =========================
     window.dataLayer = window.dataLayer || [];
 
-    function gtag(){
+    function gtag() {
       dataLayer.push(arguments);
     }
 
@@ -23,18 +22,26 @@
     // =========================
     const params = new URLSearchParams(window.location.search);
 
-    const src =
-      params.get('utm_source') ||
-      params.get('src') ||
-      'unknown';
-
+    // =========================
     // SNS判定
-    const sns = src.includes('_')
-      ? src.split('_')[0]
-      : src;
+    // =========================
+    const sns =
+      params.get('utm_source') || 
+      params.get('src') || 
+      (document.referrer.includes('threads.net') ? 'threads' :
+       document.referrer.includes('twitter.com') || document.referrer.includes('x.com') ? 'x' :
+       document.referrer.includes('tiktok.com') ? 'tiktok' :
+       'unknown');
 
     // =========================
-    // 二重遷移防止フラグ
+    // 追加情報
+    // =========================
+    const campaign = params.get('utm_campaign') || 'unknown';
+    const content = params.get('utm_content') || 'unknown';
+    const medium = params.get('utm_medium') || 'social';
+
+    // =========================
+    // 二重遷移防止
     // =========================
     let done = false;
 
@@ -42,7 +49,6 @@
       if (done) return;
       done = true;
 
-      // noteへ遷移
       window.location.href = "https://note.com/yui_transition";
     }
 
@@ -50,13 +56,15 @@
     // GA4イベント送信
     // =========================
     gtag('event', 'redirect', {
-      'src': src,
-      'sns': sns,
-      'event_callback': go
+      source: sns,
+      medium: medium,
+      campaign: campaign,
+      content: content,
+      event_callback: go
     });
 
     // =========================
-    // GA遅延・未発火対策
+    // GA未発火対策
     // =========================
     setTimeout(go, 1500);
 
