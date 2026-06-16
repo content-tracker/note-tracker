@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>redirecting...</title>
+
+  <!-- GA4読み込み -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WWD6H44SL"></script>
+
+  <script>
+    // =========================
+    // GA4初期化
+    // =========================
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-1WWD6H44SL');
+
+    // =========================
+    // URLパラメータ取得
+    // =========================
+    const params = new URLSearchParams(window.location.search);
+
+    // srcが無い場合はunknown
+    const src = params.get('src') || 'unknown';
+
+    // SNS判定
+    const sns = src.includes('_')
+      ? src.split('_')[0]
+      : src;
+
+    // =========================
+    // 二重遷移防止フラグ
+    // =========================
+    let done = false;
+
+    function go() {
+      if (done) return;
+      done = true;
+
+      // noteへ遷移
+      window.location.href = "https://note.com/yui_transition";
+    }
+
+    // =========================
+    // GA4イベント送信
+    // =========================
+    gtag('event', 'redirect', {
+      'src': src,
+      'sns': sns,
+      'event_callback': go
+    });
+
+    // =========================
+    // GA遅延・未発火対策
+    // =========================
+    setTimeout(go, 1500);
+
+  </script>
+</head>
+
+<body>
+  <p>redirecting to note...</p>
+</body>
+</html>
