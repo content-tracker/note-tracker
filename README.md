@@ -2,7 +2,7 @@
 
 [⚒️ Cross SNS Analytics Hub]
 
-以下のSNSからnoteへの流入を計測し、
+以下のSNSからnoteへの流入を計測し、<br>
 発信活動の改善につなげるためのの分析プロジェクト
 
 [🌎️] Threads・X・TikTok・Instagram
@@ -16,21 +16,21 @@
 
 
 ## Why
-SNS運用では「どこから来たか」は見えても、
+SNS運用では「どこから来たか」は見えても、<br>
 「どんな投稿が読者につながるか」は見えづらい。
 
 このプロジェクトでは、
-複数SNSからnoteへの流入データを蓄積し、
+複数SNSからnoteへの流入データを蓄積し、<br>
 
-・どのSNSが読まれやすいか
-・どのような発信が読者行動につながるのか
+・どのSNSが読まれやすいか<br>
+・どのような発信が読者行動につながるのか<br>
 
 を検証しています。
 
 
 ## Writing
 
-こんにちは、結以 -yui- です🐇
+こんにちは、結以 -yui- です🐇<br>
 
 [🖥️] 営業 → 組込みエンジニア
 　　　→ (現)Web開発・Webマーケティング
@@ -38,8 +38,8 @@ SNS運用では「どこから来たか」は見えても、
 [💚目的]
 自身の情報発信を分析するため、
 
-・複数SNSからnoteへの流入を可視化する
-・発信活動の改善につなげる
+・複数SNSからnoteへの流入を可視化する<br>
+・発信活動の改善につなげる<br>
 
 
 noteでは、
@@ -49,7 +49,7 @@ noteでは、
 - 読書から得た学び
 - 日常の気づき
 
-などをテーマに、思考ログを発信しています✍🏻
+などをテーマに、思考ログを発信しています✍🏻<br>
 
 [🔗note - 思考log🐇🧠🌱](https://content-tracker.github.io/note-tracker/?utm_source=github&utm_medium=profile&utm_campaign=note_tracker)
 
@@ -57,7 +57,7 @@ noteでは、
 
 技術開発と情報発信の両面から、
 
-「どんな発信が人に届くのか」
+「どんな発信が人に届くのか」<br>
 「どのSNSが読者行動につながるのか」
 
 を実験・分析しています🤖⭑.ᐟ
@@ -72,7 +72,9 @@ noteでは、
 - 📸 [Instagram](https://www.instagram.com/yui_transition)
 - 📻 [TikTok](https://www.tiktok.com/@yui_transition)
 
-
+<br>
+<br>
+<br>
 
 
 yui🐇
