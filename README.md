@@ -66,14 +66,13 @@ noteでは、
 
 [🔗Others link]
 
-流入元として計測しているSNSです⭑.ᐟ
-
-## 🔗 Others Link
+流入元として計測しているSNSです。
 
 - 🖤 [Threads](https://www.threads.com/@yui_transition)
 - 🐦️ [X](https://x.com/yui_transition)
 - 📸 [Instagram](https://www.instagram.com/yui_transition)
 - 📻 [TikTok](https://www.tiktok.com/@yui_transition)
+
 
 
 
