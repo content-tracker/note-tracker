@@ -68,17 +68,13 @@ noteでは、
 
 流入元として計測しているSNSです⭑.ᐟ
 
-- 🖤 Threads
-https://www.threads.com/@yui_transition
+## 🔗 Others Link
 
-- 🐦️ X
-https://x.com/yui_transition
+- 🖤 [Threads](https://www.threads.com/@yui_transition)
+- 🐦️ [X](https://x.com/yui_transition)
+- 📸 [Instagram](https://www.instagram.com/yui_transition)
+- 📻 [TikTok](https://www.tiktok.com/@yui_transition)
 
-- 📸 Instagram
-https://www.instagram.com/yui_transition?igsh=MTcxdXowaXA0dWMxbQ==
-
-- 📻️ TikTok
-https://www.tiktok.com/@yui_transition?_r=1&_t=ZS-97J7N7THeJp
 
 
 yui🐇
