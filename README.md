@@ -1,12 +1,11 @@
-
 # note-tracker
 
-[🔧クロスSNS分析用トラッキングハブ]
+[⚒️ Cross SNS Analytics Hub]
 
 以下のSNSからnoteへの流入を計測し、
 発信活動の改善につなげるためのの分析プロジェクト
 
-🌐 Threads・X・TikTok・Instagram
+[🌎️] Threads・X・TikTok・Instagram
 
 
 ## Goals
@@ -26,12 +25,12 @@ SNS運用では「どこから来たか」は見えても、
 ・どのSNSが読まれやすいか
 ・どのような発信が読者行動につながるのか
 
-を検証しています⚗️ˎˊ˗
+を検証しています。
 
 
 ## Writing
 
-こんにちは、yuiです🐇
+こんにちは、結以 -yui- です🐇
 
 [🖥️] 営業 → 組込みエンジニア
 　　　→ (現)Web開発・Webマーケティング
