@@ -33,7 +33,7 @@ noteでは以下のテーマについて発信しています✍🏻ˎˊ˗
 - 読書から得た学び
 - 日常生活での気づき　など
 
-[note - 思考log🐇🧠🌱](https://note.com/yui_transition?utm_source=github&utm_medium=profile&utm_campaign=note_tracker)
+[note - 思考log🐇🧠🌱](https://content-tracker.github.io/note-tracker/?utm_source=github&utm_medium=profile&utm_campaign=note_tracker)
 
 このように個人の情報発信とWebマーケティングの実験・分析を行っています📊𓂃 𓈒𓏸
 
